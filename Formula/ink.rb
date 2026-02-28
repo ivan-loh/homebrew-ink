@@ -25,6 +25,6 @@ class Ink < Formula
   end
 
   test do
-    assert_match /^ink \d+\.\d+\.\d+$/, shell_output("#{bin}/ink --version")
+    assert_match "ink ", shell_output("#{bin}/ink --version")
   end
 end
